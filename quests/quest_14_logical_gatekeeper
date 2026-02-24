@@ -1,0 +1,12 @@
+# Quest 14: The Logical Gatekeeper
+
+# Ask the user for their age and amount of gold
+age = int(input("Enter your age: "))
+gold = int(input("Enter the number of gold coins you have: "))
+
+# Check the conditions
+if age >= 18 and gold >= 20:
+    print("Welcome to the club! You may enter.")
+else:
+    print("Sorry, you cannot enter. You must be at least 18 years old AND have 20 or more gold coins.")
+

@@ -1,0 +1,53 @@
+# Quest 28: The Adventure Begins
+
+def start():
+    print(" You wake up in a dark forest.")
+    print("There is a path to the LEFT and a path to the RIGHT.")
+    
+    choice = input("Which way do you go? (left/right): ").lower()
+    
+    if choice == "left":
+        dragon_cave()
+    elif choice == "right":
+        treasure_river()
+    else:
+        print("You stand still for too long... A wild beast finds you.")
+        print(" Game Over.")
+
+
+def dragon_cave():
+    print("\n You enter a cave and see a sleeping dragon.")
+    print("Do you SNEAK past it or ATTACK it?")
+    
+    choice = input("(sneak/attack): ").lower()
+    
+    if choice == "sneak":
+        print("You quietly sneak past the dragon and find a magical crown!")
+        print(" You become ruler of the forest. You Win!")
+    elif choice == "attack":
+        print("The dragon wakes up and breathes fire!")
+        print(" You did not survive. Game Over.")
+    else:
+        print("The dragon wakes up while you're hesitating...")
+        print(" Game Over.")
+
+
+def treasure_river():
+    print("\n You arrive at a rushing river.")
+    print("Do you SWIM across or BUILD a raft?")
+    
+    choice = input("(swim/build): ").lower()
+    
+    if choice == "swim":
+        print("The current is too strong!")
+        print(" You are swept away. Game Over.")
+    elif choice == "build":
+        print("You safely cross the river and find hidden treasure!")
+        print(" You Win!")
+    else:
+        print("You wait too long and night falls...")
+        print(" Game Over.")
+
+
+# Start the adventure
+start()

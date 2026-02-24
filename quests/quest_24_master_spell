@@ -1,0 +1,19 @@
+# Quest 24: The Master Spell
+
+# Function 1: Ask for age and return it
+def ask_for_age():
+    age = int(input("Enter your age: "))
+    return age
+
+# Function 2: Check if they can vote
+def can_they_vote(age):
+    if age >= 18:
+        print("You are eligible to vote!")
+    else:
+        print("Sorry, you are not eligible to vote yet.")
+
+# Call the first function and store the result
+user_age = ask_for_age()
+
+# Pass the result to the second function
+can_they_vote(user_age)

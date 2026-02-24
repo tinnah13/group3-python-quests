@@ -1,0 +1,15 @@
+# Quest 9: The Greedy Goblin
+
+# Total gold pieces and number of friends
+total_gold = 27
+friends = 4
+
+# Calculate how much each friend gets (integer division)
+gold_per_friend = total_gold // friends
+
+# Calculate how much the goblin keeps (remainder using modulus)
+goblin_keeps = total_gold % friends
+
+# Display the results
+print(f"Each friend receives {gold_per_friend} gold pieces.")
+print(f"The goblin keeps {goblin_keeps} gold piece(s).")
